@@ -11,8 +11,8 @@ shadow account when the user account is created, or create a shadow account
 if one does not exist. To do this it is assumed that the shadow account and
 the user account have some fields in common which also distinguish them. The
 default is to assume both the shadow account and the user account have an
-e-mail field. The default can be changed using the BABIK_ACCOUNT_GLUE_FIELDS
-setting (see SETTINGS for more information).
+e-mail field. The default can be changed using the
+``BABIK_ACCOUNT_GLUE_FIELDS`` setting (see SETTINGS for more information).
 
 An example usage would be an e-commerce site where users where not required
 to login to make a purchase. Instead of linking orders to user accounts
@@ -24,8 +24,8 @@ without any confusion.
 Lastly this package includes a very bare bones model for the shadow account
 and it is assumed that it is desirable to extend this model to include more
 fields and such this been made a swappable model - just set
-BABIK_ACCOUNT_MODEL to the model you wish to use to represent an account (see
-SETTINGS for more information).
+``BABIK_ACCOUNT_MODEL`` to the model you wish to use to represent an account
+(see SETTINGS for more information).
 
 INSTALLATION
 ============
