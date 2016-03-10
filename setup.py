@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='django-babik-shadow-accounts',
     version='0.1.0',
-    description='"Shadow accounts" for Django'
+    description='"Shadow accounts" for Django',
     author='Aubrey Stark-Toller',
     author_email='aubrey@deepearth.uk',
     license='BSD',
