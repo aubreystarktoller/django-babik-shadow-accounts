@@ -46,6 +46,12 @@ You can obtain the source for ``django-babik-accounts`` from:
 
     https://github.com/aubreystarktoller/django-babik-accounts
 
+To install:
+
+::
+
+    pip install git+https://github.com/aubreystarktoller/django-babik-shadow-accounts.git
+
 SETTINGS
 ========
 
