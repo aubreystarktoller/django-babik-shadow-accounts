@@ -40,21 +40,21 @@ account (see SETTINGS for more information).
 INSTALLATION
 ============
 
-Django versions supported: 1.8, 1.9
-
-Python versions supported: 2.7, 3.4
-
-You can obtain the source for ``django-babik-accounts`` from:
-
-::
-
-    https://github.com/aubreystarktoller/django-babik-accounts
+Django Versions Supported:
+* Django 1.8 with Python 2.7, 3.2, 3.3 and 3.4
+* Django 1.9 with Python 2.7, 3.4 and 3.5
 
 To install using pip:
 
 ::
 
     pip install git+https://github.com/aubreystarktoller/django-babik-shadow-accounts.git
+
+You can obtain the source for ``django-babik-accounts`` from:
+
+::
+
+    https://github.com/aubreystarktoller/django-babik-accounts
 
 SETTINGS
 ========
@@ -79,13 +79,13 @@ fields allowing a shadow account to be found if one exists.
 MODELS
 ======
 
-``babik_shadow_account.BaseShadowAccount``
+``babik_shadow_account.models.BaseShadowAccount``
 
 A basis for a shadow account model including an e-mail field and a one-to-one
 relation to the user model. It is not nessary to use this when creating a 
 custom a custom shadow account model.
 
-``babik_shadow_account.ShadowAccount``
+``babik_shadow_account.models.ShadowAccount``
 
 A simple shadow account model which just inherits from ``BaseShadowAccount``.
 This swappable using the ``BABIK_SHADOW_ACCOUNT_MODEL`` setting.
