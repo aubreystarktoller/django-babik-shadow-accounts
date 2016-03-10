@@ -33,7 +33,7 @@ coverage:
 	coverage html
 
 test:
-	python setup.py test
+	python setup.py test --addopts="--cov=babik_shadow_accounts"
 
 install: clean
 	python setup.py install
