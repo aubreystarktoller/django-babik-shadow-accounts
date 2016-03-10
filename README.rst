@@ -2,6 +2,12 @@
 Django Babik Shadow Accounts
 ============================
 
+.. image:: https://travis-ci.org/aubreystarktoller/django-babik-shadow-accounts.svg?branch=master
+   :target: https://travis-ci.org/aubreystarktoller/django-babik-shadow-accounts
+
+.. image:: https://coveralls.io/repos/github/aubreystarktoller/django-babik-shadow-accounts/badge.svg?branch=master
+   :target: https://coveralls.io/github/aubreystarktoller/django-babik-shadow-accounts?branch=master 
+
 A tiny Django app that adds "shadow accounts" - accounts that represent users
 (as in people) but are not necessarily linked to user accounts (as in the
 representation of the person in the database).
