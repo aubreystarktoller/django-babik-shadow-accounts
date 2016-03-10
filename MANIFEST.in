@@ -1,5 +1,4 @@
-graft babik
-graft docs
+graft babik_shadow_accounts
 include LICENSE
 include MANIFEST.in
 include README.rst
