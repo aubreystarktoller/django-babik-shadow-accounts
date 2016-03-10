@@ -12,15 +12,14 @@ Django Babik Shadow Accounts
    :target: https://coveralls.io/github/aubreystarktoller/django-babik-shadow-accounts?branch=master 
 
 A tiny Django app that adds "shadow accounts" - accounts that represent users
-(as in people) but are not necessarily linked to user accounts (as in the
-representation of the person in the database).
+but are not necessarily linked to user accounts.
 
 This app also will automatically link a user account to its corresponding
 shadow account when the user account is created, or create a shadow account
 if one does not exist. To do this it is assumed that the shadow account and
 the user account have some fields in common which also distinguish them. The
-default is to assume both the shadow account and the user account have an
-e-mail field. The default can be changed using the
+default is to assume both the shadow account and the user account have a
+not-empty e-mail field. The default can be changed using the
 ``BABIK_SHADOW_ACCOUNT_GLUE_FIELDS`` setting (see SETTINGS for more
 information).
 
