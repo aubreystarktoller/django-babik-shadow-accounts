@@ -21,11 +21,12 @@ if one does not exist. To do this it is assumed that the shadow account and
 the user account have some fields in common which also distinguish them. The
 default is to assume both the shadow account and the user account have an
 e-mail field. The default can be changed using the
-``BABIK_ACCOUNT_GLUE_FIELDS`` setting (see SETTINGS for more information).
+``BABIK_SHADOW_ACCOUNT_GLUE_FIELDS`` setting (see SETTINGS for more
+information).
 
 An example usage would be an e-commerce site where users where not required
-to login to make a purchase. Instead of linking orders to user accounts
-orders would be linked to these shadow accounts. A user's orders would be
+to login to make a purchase. Instead of linking orders to a user account
+orders would be linked to a shadow account. A user's orders would be
 attached to a single record without a user account having to be created, and
 the user would be able to create an account in the future and view past orders
 without any confusion.
@@ -33,8 +34,8 @@ without any confusion.
 Lastly this package includes a very bare bones model for the shadow account
 and it is assumed that it is desirable to extend this model to include more
 fields and such this been made a swappable model - just set
-``BABIK_ACCOUNT_MODEL`` to the model you wish to use to represent an account
-(see SETTINGS for more information).
+``BABIK_SHADOW_ACCOUNT_MODEL`` to the model you wish to use to represent an 
+account (see SETTINGS for more information).
 
 INSTALLATION
 ============
@@ -49,7 +50,7 @@ You can obtain the source for ``django-babik-accounts`` from:
 
     https://github.com/aubreystarktoller/django-babik-accounts
 
-To install:
+To install using pip:
 
 ::
 
@@ -58,22 +59,36 @@ To install:
 SETTINGS
 ========
 
-BABIK_ACCOUNT_MODEL
+BABIK_SHADOW_ACCOUNT_MODEL
 -------------------
-Default: 'babik_shadow_accounts.Account'
+Default: ``"babik_shadow_accounts.Account"``
 
 The model to use to represent an account. This must provide a one-to-one
 relation to ``AUTH_USER_MODEL`` and this relation must be able to be ``NULL``.
 
-BABIK_ACCOUNT_GLUE_FIELDS
+BABIK_SHADOW_ACCOUNT_GLUE_FIELDS
 -------------------------
-Default: {'email': 'email'}
+Default: ``{"email": "email"}``
 
 The fields that user accounts and shadow accounts have in common. Must be a
 dictionary whose keys are fields on the shadow account model and whose
 values must be fields on the user model. When a user is created this setting
-acts as mapping between the shadow account models and the user models fields
-allowing a shadow account to be found if one exists.
+acts as a mapping between a shadow account model's fields and a user model's
+fields allowing a shadow account to be found if one exists.
+
+MODELS
+======
+
+``babik_shadow_account.BaseShadowAccount``
+
+A basis for a shadow account model including an e-mail field and a one-to-one
+relation to the user model. It is not nessary to use this when creating a 
+custom a custom shadow account model.
+
+``babik_shadow_account.ShadowAccount``
+
+A simple shadow account model which just inherits from ``BaseShadowAccount``.
+This swappable using the ``BABIK_SHADOW_ACCOUNT_MODEL`` setting.
 
 UTILITIES
 ========
