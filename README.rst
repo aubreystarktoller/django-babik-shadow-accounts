@@ -33,14 +33,15 @@ without any confusion.
 
 Lastly this package includes a very bare bones model for the shadow account
 and it is assumed that it is desirable to extend this model to include more
-fields and such this been made a swappable model - just set
-``BABIK_SHADOW_ACCOUNT_MODEL`` to the model you wish to use to represent an 
-account (see SETTINGS for more information).
+fields and as such this has been made a swappable model - just set
+``BABIK_SHADOW_ACCOUNT_MODEL`` to the model you wish to use to represent a
+shadow account (see SETTINGS for more information).
 
 INSTALLATION
 ============
 
 Django Versions Supported:
+
 * Django 1.8 with Python 2.7, 3.2, 3.3 and 3.4
 * Django 1.9 with Python 2.7, 3.4 and 3.5
 
