@@ -2,6 +2,9 @@
 Django Babik Shadow Accounts
 ============================
 
+.. image:: https://img.shields.io/badge/license-BSD-red.svg
+   :targer: https://raw.githubusercontent.com/aubreystarktoller/django-babik-shadow-accounts/master/LICENSE
+
 .. image:: https://travis-ci.org/aubreystarktoller/django-babik-shadow-accounts.svg?branch=master
    :target: https://travis-ci.org/aubreystarktoller/django-babik-shadow-accounts
 
