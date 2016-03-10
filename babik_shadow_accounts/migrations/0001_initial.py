@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
                 ('email', models.EmailField(max_length=254, unique=True, null=True, blank=True)),
             ],
             options={
-                'swappable': 'BABIK_ACCOUNT_MODEL',
+                'swappable': 'BABIK_SHADOW_ACCOUNT_MODEL',
             },
         ),
     ]

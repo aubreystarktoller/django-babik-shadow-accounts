@@ -21,4 +21,4 @@ class BaseShadowAccount(models.Model):
 
 class ShadowAccount(BaseShadowAccount):
     class Meta:
-        swappable = 'BABIK_ACCOUNT_MODEL'
+        swappable = 'BABIK_SHADOW_ACCOUNT_MODEL'
