@@ -15,7 +15,7 @@ Content
 -------
 1. `Installation`_
 2. `Settings`_
-3. `Models`
+3. `Models`_
 4. `Utilities`_
 5. `Testing`_
 6. `Contributing`_
@@ -48,7 +48,7 @@ fields and as such this has been made a swappable model - just set
 ``BABIK_SHADOW_ACCOUNT_MODEL`` to the model you wish to use to represent a
 shadow account (see SETTINGS for more information).
 
-1. Installation
+Installation
 ===============
 
 Django Versions Supported:
@@ -68,7 +68,7 @@ You can obtain the source for ``django-babik-accounts`` from:
 
     https://github.com/aubreystarktoller/django-babik-accounts
 
-2. Settings
+Settings
 ===========
 
 BABIK_SHADOW_ACCOUNT_MODEL
@@ -88,7 +88,7 @@ values must be fields on the user model. When a user is created this setting
 acts as a mapping between a shadow account model's fields and a user model's
 fields allowing a shadow account to be found if one exists.
 
-3. Models
+Models
 =========
 
 ``babik_shadow_account.models.BaseShadowAccount``
@@ -102,13 +102,13 @@ custom a custom shadow account model.
 A simple shadow account model which just inherits from ``BaseShadowAccount``.
 This swappable using the ``BABIK_SHADOW_ACCOUNT_MODEL`` setting.
 
-4. Utilities
+Utilities
 ============
 
 ``babik_shadow_account.get_shadow_account_models()`` returns the current
 shadow account model
 
-5. Testing
+Testing
 ==========
 
 To run the tests first clone the git repo and enter the cloned repo:
@@ -131,7 +131,7 @@ To run the tests in the current environment:
 
     make test
 
-6. Contributing
+Contributing
 ===============
 
 Contributions are welcome. Please ensure the any submitted code is well
@@ -143,11 +143,11 @@ it **privately** by e-mailing Aubrey Stark-Toller at aubrey@deepearth.uk.
 Please **do not** raise it on the issue tracker, or publicly at all, until I
 have had a chance to look into it.
 
-7. Authors
+Authors
 ==========
 Aubrey Stark-Toller
 
-8. License
+License
 ==========
 ``django-babik-shadow-accounts`` is licensed under the BSD license. See
 LICENSE for the full license.
