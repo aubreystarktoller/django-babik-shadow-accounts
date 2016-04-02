@@ -99,11 +99,13 @@ shadow account model
 TESTING
 =======
 
-To run the tests first clone the git repo:
+To run the tests first clone the git repo and enter the cloned repo:
 
+::
     git clone https://github.com/aubreystarktoller/django-babik-account
-    cd django-babkik-account
+    cd django-babik-account
   
+
 To run the tests you'll require ``make``. It is recommended that use tox to run
 the tests:
     
