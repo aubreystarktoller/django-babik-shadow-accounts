@@ -11,8 +11,8 @@ Django Babik Shadow Accounts
 .. image:: https://coveralls.io/repos/github/aubreystarktoller/django-babik-shadow-accounts/badge.svg?branch=master
    :target: https://coveralls.io/github/aubreystarktoller/django-babik-shadow-accounts?branch=master 
   
-Content
--------
+Contents:
+
 1. `Installation`_
 2. `Settings`_
 3. `Models`_
@@ -49,7 +49,7 @@ fields and as such this has been made a swappable model - just set
 shadow account (see SETTINGS for more information).
 
 Installation
-===============
+============
 
 Django Versions Supported:
 
@@ -69,17 +69,17 @@ You can obtain the source for ``django-babik-accounts`` from:
     https://github.com/aubreystarktoller/django-babik-accounts
 
 Settings
-===========
+========
 
 BABIK_SHADOW_ACCOUNT_MODEL
--------------------
+--------------------------
 Default: ``"babik_shadow_accounts.Account"``
 
 The model to use to represent an account. This must provide a one-to-one
 relation to ``AUTH_USER_MODEL`` and this relation must be able to be ``NULL``.
 
 BABIK_SHADOW_ACCOUNT_GLUE_FIELDS
--------------------------
+--------------------------------
 Default: ``{"email": "email"}``
 
 The fields that user accounts and shadow accounts have in common. Must be a
@@ -89,7 +89,7 @@ acts as a mapping between a shadow account model's fields and a user model's
 fields allowing a shadow account to be found if one exists.
 
 Models
-=========
+======
 
 ``babik_shadow_account.models.BaseShadowAccount``
 
@@ -103,13 +103,13 @@ A simple shadow account model which just inherits from ``BaseShadowAccount``.
 This swappable using the ``BABIK_SHADOW_ACCOUNT_MODEL`` setting.
 
 Utilities
-============
+=========
 
 ``babik_shadow_account.get_shadow_account_models()`` returns the current
 shadow account model
 
 Testing
-==========
+=======
 
 To run the tests first clone the git repo and enter the cloned repo:
 
@@ -132,7 +132,7 @@ To run the tests in the current environment:
     make test
 
 Contributing
-===============
+============
 
 Contributions are welcome. Please ensure the any submitted code is well
 tested.
@@ -144,10 +144,10 @@ Please **do not** raise it on the issue tracker, or publicly at all, until I
 have had a chance to look into it.
 
 Authors
-==========
+=======
 Aubrey Stark-Toller
 
 License
-==========
+=======
 ``django-babik-shadow-accounts`` is licensed under the BSD license. See
 LICENSE for the full license.
