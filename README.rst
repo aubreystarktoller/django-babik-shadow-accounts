@@ -103,8 +103,8 @@ To run the tests first clone the git repo and enter the cloned repo:
 
 ::
 
-    git clone https://github.com/aubreystarktoller/django-babik-account
-    cd django-babik-account
+    git clone https://github.com/aubreystarktoller/django-babik-shadow-accounts
+    cd django-babik-shadow-accounts
 
 
 To run the tests you'll require ``make``. It is recommended that use tox to run
